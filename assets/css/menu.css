@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-    background-image: url('../images/imgmenu/background1.jpg'); /* Chemin vers l'image */
+    background-image: url('../images/imgmenu/background2.png'); /* Chemin vers l'image */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
     background-size: cover; /* Redimensionne l'image pour couvrir tout le body */
     background-position: center top; /* Centre l'image horizontalement et la positionne en haut */
