@@ -4,13 +4,24 @@ html, body {
 }
 
 body {
-    background-image: url('../images/imgmenu/bckground4.png'); /* Chemin vers l'image */
+    /* Image de fond par défaut (pour les grands écrans) */
+    background-image: url('../images/imgmenu/bckground.jpg'); /* Chemin vers l'image pour grands écrans */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
     background-size: cover; /* Redimensionne l'image pour couvrir tout le body */
-    background-position: center top; /* Centre l'image horizontalement et la positionne en haut */
+    background-position: center center; /* Centre l'image */
     background-attachment: fixed; /* Fixe l'image en arrière-plan pour un effet de défilement */
     background-color: #f4f2ed; /* Couleur de fond de secours si l'image ne se charge pas */
 }
+
+/* Styles pour les écrans plus petits */
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url('../images/imgmenu/bckground4.png'); /* Chemin vers l'image pour petits écrans */
+        background-size: cover; /* Redimensionne l'image pour couvrir tout le body */
+        background-position: center center; /* Centre l'image */
+    }
+}
+
 
 .center-logo {
     display: flex;
