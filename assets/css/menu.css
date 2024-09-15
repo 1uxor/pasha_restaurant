@@ -1,0 +1,153 @@
+html, body {
+    height: 100%; /* Assure que le body occupe toute la hauteur de la fenêtre */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+body {
+    background-image: url('../images/imgmenu/bckground.jpg'); /* Chemin vers l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-size: cover; /* Redimensionne l'image pour couvrir tout le body */
+    background-position: center top; /* Centre l'image horizontalement et la positionne en haut */
+    background-attachment: fixed; /* Fixe l'image en arrière-plan pour un effet de défilement */
+    background-color: #f4f2ed; /* Couleur de fond de secours si l'image ne se charge pas */
+}
+
+.center-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Réduit la hauteur totale du conteneur */
+    margin-top: -300px; /* Ajuste les marges supérieures si nécessaire */
+    margin-bottom: -100px; /* Ajuste les marges inférieures si nécessaire */
+}
+
+.center-logo img {
+    width: 400px; /* Ajuste la largeur de l'image */
+    height: auto; /* Maintient les proportions de l'image */
+    margin-top: -900px; /* Diminue la marge supérieure autour de l'image */
+    margin-bottom: -900px; /* Diminue la marge inférieure autour de l'image */
+}
+
+#menu {
+    width: 100%; /* Assure que le conteneur prend toute la largeur */
+    text-align: center; /* Centre les éléments enfants horizontalement */
+    padding: 0 20px; /* Ajoute un peu d'espace sur les côtés pour les grands écrans */
+}
+
+#menu .title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#menu .title h2 {
+    font-size: 40px;
+    color: #383848;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+#menu .title p {
+    font-weight: 600;
+    font-size: 14px;
+    color: #9a9a9a;
+    line-height: 1.5;
+}
+
+#menu .menu-items {
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    width: 100%;
+}
+
+#menu .menu-category {
+    max-width: 500px; /* Largeur maximale pour chaque catégorie */
+    width: 100%; /* Chaque catégorie occupe toute la largeur disponible */
+    margin: 20px 0; /* Ajoute de l'espace vertical entre chaque catégorie */
+    display: block; /* Assure que chaque catégorie prend une ligne entière */
+    box-sizing: border-box; /* Inclut le padding et les bordures dans la largeur */
+}
+
+#menu .menu-category h3 {
+    font-size: 24px;
+    color: #383848;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e4b95b;
+    padding-bottom: 10px;    
+}
+
+#menu .menu-item {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+    width: 100%; /* Assure que les éléments prennent toute la largeur */
+    max-width: 500px; /* Fixe une largeur maximale */
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Inclut le padding et les bordures dans la largeur */
+}
+
+#menu .menu-item img {
+    width: 80px;
+    height: 80px; /* Assure que toutes les images ont la même hauteur */
+    margin-right: 20px;
+    border-radius: 50%;
+    object-fit: cover; /* Assure que l'image s'adapte bien au conteneur */
+}
+
+#menu .menu-item div {
+    width: 100%;
+}
+
+#menu .menu-item h3 {
+    color: #383848;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0; /* Supprime les marges supplémentaires */
+    display: flex;
+    justify-content: space-between; /* Aligne le nom à gauche et le prix à droite */
+    align-items: center;
+}
+
+#menu .menu-item span {
+    color: #e4b95b;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#menu .menu-item p {
+    margin-top: 5px; /* Ajuste l'espacement entre le titre et la description */
+    color: #9a9a9a;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#menu .btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#menu .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: #e4b95b;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+
+#menu .btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu .btn:hover {
+    background: #383848;
+}
