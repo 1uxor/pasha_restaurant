@@ -16,7 +16,7 @@ body {
 /* Styles pour les écrans plus petits */
 @media only screen and (max-width: 768px) {
     body {
-        background-image: url('../images/imgmenu/bckground4.png'); /* Chemin vers l'image pour petits écrans */
+        background-image: url('../images/imgmenu/bckground2.png'); /* Chemin vers l'image pour petits écrans */
         background-size: cover; /* Redimensionne l'image pour couvrir tout le body */
         background-position: center center; /* Centre l'image */
     }
