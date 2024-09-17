@@ -611,6 +611,11 @@ body.nav-active { overflow: hidden; }
   border-block-end: 1px solid transparent;
   transition: var(--transition-1);
 }
+.logo {
+  display: inline-block;
+  margin-top: -70px; /* Ajustez la valeur pour déplacer le logo plus haut */
+}
+
 
 .header.active {
   padding-block: 20px;
